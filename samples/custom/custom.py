@@ -88,8 +88,8 @@ class CustomDataset(utils.Dataset):
         subset: Subset to load: train or val
         """
         # Add classes according to the numbe of classes required to detect
-        self.add_class("custom", 1, "object1")
-        self.add_class("custom",2,"object2")
+        self.add_class("custom", 1, "broccoli")
+        #self.add_class("custom",2,"object2")
 
         # Train or validation dataset?
         assert subset in ["train", "val"]
